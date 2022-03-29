@@ -92,6 +92,18 @@ li{
   padding-bottom: 28px;
 }
 
+.header-logo{
+  transition:  opacity 0.4s ease;
+}
+
+.header-logo:hover{
+  opacity: 0.8;
+}
+
+.header-logo:active{
+  opacity: 0.6;
+}
+
 .header-logo-img {
   display: block;
 }
@@ -128,13 +140,18 @@ li{
   background-size: contain;
   background-position: left calc(50% + 416px) center;
   background-color: var(--hero-bg-color);
+  margin-bottom: 20px;
+}
+
+.hero-content{
+  position: relative;
 }
 
 .manufactor-label{
   width: 160px;
   height: 160px;
   position: absolute;
-  top: 0;
+  top: -10%;
   left: 48%;
   object-fit: contain;
 }
@@ -160,6 +177,66 @@ li{
   color: var(--main-heading-color);
 }
 
+/* COLLECTION */
+
+.collection {
+  max-width: 1440px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F8F8F2;
+  padding: 50px 143px;
+  background-image: url("../img/decorative-bg-img.png"), url("../img/decorative-bg-img_1.png"), url("../img/decorative-bg-img_3.png"), url("../img/decorative-bg-img_2.png");
+  background-repeat: no-repeat, no-repeat , no-repeat , no-repeat;
+  background-position:left -15% top 0 , right -20%  top 50%, right -10%  top 50%,left -15% bottom 10%   ;
+}
+
+
+.collection-heading {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 80px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  color: var(--main-heading-color);
+}
+
+.collectio-items-row {
+  display: flex;
+  align-items: center;
+}
+
+.collection-item-img {
+  width: 450px;
+  height: 375px;
+  object-fit: contain;
+}
+
+.collection-item-content {
+  width: 453px;
+  margin-left: 150px;
+  margin-right: 117px;
+}
+
+.collection-item-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.collection-item-desc {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
 
 /* BACKGROUND-IMAGE FOR RETINA SCREENS */
 @media
@@ -171,5 +248,8 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
   .hero {
     background-image: url("../img/hero-bg-img@2x.jpg");
+  }
+  .collection{
+    background-image: url("../img/decorative-bg-img@2x.png"), url("../img/decorative-bg-img_1@2x.png"), url("../img/decorative-bg-img_3@2x.png"), url("../img/decorative-bg-img_2@2x.png");
   }
 }
