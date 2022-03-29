@@ -1,3 +1,12 @@
+/* CUSROM PROPS */
+:root{
+  --hero-bg-color:#F2D6B5;
+  --proposal-bg-color:#C99B67;
+  --manual-bg-color:#0A775F;
+  --main-heading-color:#000;
+  --main-text-color: #333;
+}
+
 /* GLOBAL */
 html{
   box-sizing: border-box;
@@ -19,7 +28,7 @@ body{
   margin: 0;
   font-size: 16px;
   line-height: 1.5;
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto" , "Arial", sans-serif;
   background-color: #fff;
   color: #222;
 }
@@ -29,12 +38,16 @@ img{
   height: auto;
 }
 
+a{
+  text-decoration: none;
+}
+
 /* CONTAINER */
 .container{
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1380px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
