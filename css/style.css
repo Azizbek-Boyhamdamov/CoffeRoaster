@@ -404,9 +404,16 @@ li{
   left: 0;
 }
 
-.manual-steps:not(:last-child):before{
+.manual-steps:not(:last-child):after{
+  display: inline-block;
   content: "";
-  /* border-right: 1px solid black; */
+  background-image: url("../img/strike-through.svg");
+  background-repeat: no-repeat;
+  height: 3px ;
+  width: 433px;
+  position: absolute;
+  top: -50px;
+  left: 60px;
 }
 
 .manual-steps:not(:last-child){
