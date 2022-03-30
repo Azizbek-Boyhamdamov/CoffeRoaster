@@ -20,6 +20,11 @@ html{
   box-sizing: inherit;
 }
 
+*:focus{
+  outline: 2px dashed var(--proposal-bg-color);
+  outline-offset: 3px;
+}
+
 body{
   display: flex;
   flex-direction: column;
@@ -37,6 +42,8 @@ img{
   max-width: 100%;
   height: auto;
 }
+
+
 
 a{
   text-decoration: none;
@@ -93,6 +100,7 @@ li{
 }
 
 .header-logo{
+  display: inline-block;
   transition:  opacity 0.4s ease;
 }
 
@@ -125,6 +133,15 @@ li{
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 1px;
+  transition: opacity 0.4s ease;
+}
+
+.sitenav-link:hover{
+  opacity: 0.8;
+}
+
+.sitenav-link:active{
+  opacity: 0.6;
 }
 
 /* MAIN-CONTENT */
@@ -248,8 +265,20 @@ li{
   flex-direction: column;
   align-items: center;
   margin-bottom: 80px;
+  position: relative;
 }
-
+.proposal-info::after{
+  display: inline-block;
+  width: 140px;
+  height: 144px;
+  content: "";
+  background-image: url("../img/slogan-label.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: -5%;
+  bottom: -75%;
+}
 .proposal-heading {
   margin: 0;
   padding-bottom: 10px;
@@ -271,6 +300,7 @@ li{
   display: flex;
   justify-content: space-between;
 }
+
 .cards-content {
   width: 433px;
 }
@@ -418,6 +448,37 @@ li{
   background-color: rgba(201, 155, 103,0.6);
 }
 
+/* FOOTER */
+
+.site-footer {
+  background-color: var(--hero-bg-color);
+}
+.site-footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.social-sites {
+  display: flex;
+}
+.social-links {
+  display: inline-block;
+  transition: opacity 0.4s ease;
+}
+.social-links:hover{
+  opacity: 0.8;
+}
+.social-links:active{
+  opacity: 0.6;
+}
+.social-links:not(:last-child){
+  margin-right: 30px;
+}
+.social-icons {
+  display:block;
+}
 
 /* BACKGROUND-IMAGE FOR RETINA SCREENS */
 @media
